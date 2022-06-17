@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Before and after pseudo selector</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: rgb(230, 30, 30);
+        }
+
+        header::before{
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        .navigation {
+            font-family: 'Bree Serif', serif;
+            font-size: 20px;
+            display: flex;
+            text-decoration: none;
+             
+        }
+   .item{ text-decoration: none;
+text-decoration-color: blue; }
+        li {
+            list-style: none;
+            padding: 20px 23px;
+             
+            
+        }
+
+        section {
+            height: 344px;
+            font-family: 'Bree Serif', serif;
+            margin: 3px 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        /* section::after{
+        content:"this is a content"
+    } */
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item"> <a href="https://www.tutorialspoint.com/index.htm" > home</a></li>
+                 <li class="item"><a href="https://www.tutorialspoint.com/about/index.htm">About</a></li>
+                <li class="item"><a href="https://www.tutorialspoint.com/about/about_terms_of_use.htm">Services</a></li>
+                <li class="item"><a href="https://www.tutorialspoint.com/about/contact_us.htm">contect us </a> </li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h1> Welcome to abhi's  World</h1>
+            <p> Web development, also known as website development, refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser. It may, however, also include web design, web programming, and database management. Web development is closely related to the job of designing the features and functionality of apps (web design). The term development is usually reserved for the actual construction of these things (that is to say, the programming of sites). The basic tools involved are programming languages called HTML (Hypertext Markup Language), CSS (Cascading Style Sheets), and JavaScript</p>
+        </section>
+       
+</body>
+
+</html>
